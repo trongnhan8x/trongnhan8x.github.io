@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Deep link test</title>
+        <style type="text/css">
+            .table {
+                table-layout: fixed;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container p-3">
+            <h2 class="bg-primary text-white">AppLinks Test</h2>
+            <h4 class="p-2 pt-5">PROD</h4>
+            <div><a href="https://www.airtrip.jp">https://www.airtrip.jp</a></div>
+            <div><a href="https://sp.airtrip.jp">https://sp.airtrip.jp</a></div>
+            <div><a href="https://www.airtrip.jp/guide/domesticair/point.php">https://www.airtrip.jp/guide/domesticair/point.php</a></div>
+            <div><a href="https://www.airtrip.jp/confirmation/">https://www.airtrip.jp/confirmation/</a></div>
+
+            <br/>
+            <div><a href="https://www.airtrip.jp/app-air-lp/?source=listing.adwards.airtrip.jp">https://www.airtrip.jp/app-air-lp/?source=listing.adwards.airtrip.jp</a>
+            </div>
+            <div><a href="https://www.airtrip.jp/app-air-lp">https://www.airtrip.jp/app-air-lp</a></div>
+            <div><a href="https://www.airtrip.jp/app-air-lp/">https://www.airtrip.jp/app-air-lp/</a></div>
+            <div><a href="https://www.airtrip.jp/app-air-lp/abc">https://www.airtrip.jp/app-air-lp/abc</a></div>
+            <div><a href="https://www.airtrip.jp/app-air-lp/abc.html">https://www.airtrip.jp/app-air-lp/abc.html</a></div>
+            <div><a href="https://www.airtrip.jp/app-air-lp/abc/xyz">https://www.airtrip.jp/app-air-lp/abc/xyz</a></div>
+            <div><a href="https://www.airtrip.jp/app-air-lp/abc/xyz.html">https://www.airtrip.jp/app-air-lp/abc/xyz.html</a>
+            </div>
+
+            <h4 class="p-2 pt-5">DEV</h4>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp">https://www-airtrip-renewal-dev.airtrip.jp</a></div>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/guide/domesticair/point.php">https://www-airtrip-renewal-dev.airtrip.jp/guide/domesticair/point.php</a>
+            </div>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/confirmation/">https://www-airtrip-renewal-dev.airtrip.jp/confirmation/</a>
+            </div>
+
+            <br/>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/?source=listing.adwards.airtrip.jp">https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/?source=listing.adwards.airtrip.jp</a></div>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp">https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp</a></div>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/">https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/</a></div>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/abc">https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/abc</a></div>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/abc.html">https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/abc.html</a></div>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/abc/xyz">https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/abc/xyz</a></div>
+            <div><a href="https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/abc/xyz.html">https://www-airtrip-renewal-dev.airtrip.jp/app-air-lp/abc/xyz.html</a></div>
+            <br/><br/>
+
+            <h1><a id="ddl">Deferred Deep Link Test</a></h1>
+            <h2 class="bg-primary text-white">Adjust Deferred Deep Link</h2>
+            <table class="table _table-dark _table-striped table-hover">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">Env</th>
+                        <th scope="col">Format</th>
+                        <th scope="col">For signup</th>
+                        <th scope="col">For domestic_dp/search</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th rowspan="3">Dev</th>
+                        <td>tracker + deeplink</td>
+                        <td><a href="https://app.adjust.com/6x8ak2?deep_link=evolableasia.airtripstg%3A%2F%2Fsignup">https://app.adjust.com/6x8ak2?deep_link=evolableasia.airtripstg%3A%2F%2Fsignup</a></td>
+                        <td><a href="https://app.adjust.com/6x8ak2?deep_link=evolableasia.airtripstg%3A%2F%2Fdomestic_dp%2Fsearch">https://app.adjust.com/6x8ak2?deep_link=evolableasia.airtripstg%3A%2F%2Fdomestic_dp%2Fsearch</a></td>
+                    </tr>
+                    <tr>
+                        <td>ulink</td>
+                        <td><a href="https://cftc.adj.st/signup?adj_t=6x8ak2&adj_deep_link=evolableasia.airtripstg%3A%2F%2Fsignup">https://cftc.adj.st/signup?adj_t=6x8ak2&adj_deep_link=evolableasia.airtripstg%3A%2F%2Fsignup</a></td>
+                        <td><a href="https://cftc.adj.st/domestic_dp/search?adj_t=6x8ak2&adj_deep_link=evolableasia.airtripstg%3A%2F%2Fdomestic_dp%2Fsearch">https://cftc.adj.st/domestic_dp/search?adj_t=6x8ak2&adj_deep_link=evolableasia.airtripstg%3A%2F%2Fdomestic_dp%2Fsearch</a></td>
+                    </tr>
+                    <tr>
+                        <td>jsr</td>
+                        <td><a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fcftc.adj.st%2Fsignup%3Fadj_t%3D6x8ak2%26adj_deep_link%3Devolableasia.airtripstg%253A%252F%252Fsignup">https://app.adjust.com/jsr?url=https%3A%2F%2Fcftc.adj.st%2Fsignup%3Fadj_t%3D6x8ak2%26adj_deep_link%3Devolableasia.airtripstg%253A%252F%252Fsignup</a></td>
+                        <td><a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fcftc.adj.st%2Fdomestic_dp%2Fsearch%3Fadj_t%3D6x8ak2%26adj_deep_link%3Devolableasia.airtripstg%253A%252F%252Fdomestic_dp%252Fsearch">https://app.adjust.com/jsr?url=https%3A%2F%2Fcftc.adj.st%2Fdomestic_dp%2Fsearch%3Fadj_t%3D6x8ak2%26adj_deep_link%3Devolableasia.airtripstg%253A%252F%252Fdomestic_dp%252Fsearch</a></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="4">Pro</th>
+                        <td>tracker + deeplink</td>
+                        <td><a href="https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fsignup">https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fsignup</a></td>
+                        <td><a href="https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fdomestic_dp%2Fsearch">https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fdomestic_dp%2Fsearch</a></td>
+                    </tr>
+                    <tr>
+                        <td>tracker + deeplink of VN-Test</td>
+                        <td><a href="https://app.adjust.com/gj0yx48?deep_link=evolableasia.airtrip%3A%2F%2Fsignup">https://app.adjust.com/gj0yx48?deep_link=evolableasia.airtrip%3A%2F%2Fsignup</a></td>
+                        <td><a href="https://app.adjust.com/gj0yx48?deep_link=evolableasia.airtrip%3A%2F%2Fdomestic_dp%2Fsearch">https://app.adjust.com/gj0yx48?deep_link=evolableasia.airtrip%3A%2F%2Fdomestic_dp%2Fsearch</a></td>
+                    </tr>
+                    <tr>
+                        <td>ulink</td>
+                        <td><a href="https://s5xm.adj.st/signup?adj_t=srcf21p">https://s5xm.adj.st/signup?adj_t=srcf21p</a></td>
+                        <td><a href="https://s5xm.adj.st/domestic_dp/search?adj_t=srcf21p">https://s5xm.adj.st/domestic_dp/search?adj_t=srcf21p</a></td>
+                    </tr>
+                    <tr>
+                        <td>jsr</td>
+                        <td><a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fsignup%3Fadj_t%3Dsrcf21p">https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fsignup%3Fadj_t%3Dsrcf21p</a></td>
+                        <td><a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fdomestic_dp%2Fsearch%3Fadj_t%3Dsrcf21p">https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fdomestic_dp%2Fsearch%3Fadj_t%3Dsrcf21p</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br/><br/>
+            <h1>Deep Link Test</h1>
+            <h4 class="p-2">KaiU用リンク</h4>
+            <div class="text-secondary"><b>ulink</b></div>
+            <div><a href="https://s5xm.adj.st/top?adj_t=v1al4pl">https://s5xm.adj.st/top?adj_t=v1al4pl</a></div>
+            <br/><br/>
+
+            <div class="text-secondary">tracker + deeplink</div>
+            <div><a href="https://app.adjust.com/v1al4pl?deep_link=evolableasia.airtrip%3A%2F%2Ftop">https://app.adjust.com/v1al4pl?deep_link=evolableasia.airtrip%3A%2F%2Ftop</a></div>
+            <br/><br/>
+
+            <div class="text-secondary">jsr</div>
+            <div><a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Ftop%3Fadj_t%3Dv1al4pl">https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Ftop%3Fadj_t%3Dv1al4pl</a></div>
+            <br/><br/>
+
+            <h4 class="p-2">tracker + deeplink</h4>
+            <div class="text-secondary">signup</div>
+            <div><a href=https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fsignup>https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fsignup</a></div>
+
+            <div class="text-secondary">domestic_dp/search</div>
+            <div><a href="https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fdomestic_dp%2Fsearch">https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fdomestic_dp%2Fsearch</a></div>
+            <br/>
+
+            <h4 class="p-2">ulink</h4>
+            <div class="text-secondary">signup</div>
+            <div><a href="https://s5xm.adj.st/signup?adj_t=srcf21p">https://s5xm.adj.st/signup?adj_t=srcf21p</a></div>
+
+            <div class="text-secondary">domestic_dp/search</div>
+            <div><a href="https://s5xm.adj.st/domestic_dp/search?adj_t=srcf21p">https://s5xm.adj.st/domestic_dp/search?adj_t=srcf21p</a></div>
+            <br/>
+
+            <h4 class="p-2">jsr</h4>
+            <div class="text-secondary">signup</div>
+            <div><a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fsignup%3Fadj_t%3Dsrcf21p">https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fsignup%3Fadj_t%3Dsrcf21p</a></div>
+
+            <div class="text-secondary">domestic_dp/search</div>
+            <div><a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fdomestic_dp%2Fsearch%3Fadj_t%3Dsrcf21p">https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fdomestic_dp%2Fsearch%3Fadj_t%3Dsrcf21p</a></div>
+            <br/><br/>
+
+            <h2 class="bg-primary text-white">Firebase</h2>
+            <a href="https://airtrip.page.link/dfSx">Dynamic Links</a>
+            <br/><br/>
+
+            <a href="https://airtrip.page.link/?link=singup&apn=com.evolableasia.airtrip&ibi=com.evolableasia.AirTrip&isi=1185721028&efr=1">manual Links</a>
+            <br/><br/>
+
+            <h1>RAW Deep Link Test</h1>
+            <h2 class="bg-primary text-white">DEV</h2>
+            <h4 class="p-2">国内DP</h4>
+            <div class="text-secondary">TOP</div>
+            <div><a href="evolableasia.airtripstg://domestic_dp/search">evolableasia.airtripstg://domestic_dp/search</a></div>
+
+            <div class="text-secondary">空港指定</div>
+            <div><a href="evolableasia.airtripstg://domestic_dp/search?departure=HND&destination=FUK">evolableasia.airtripstg://domestic_dp/search?departure=HND&destination=FUK</a></div>
+
+            <h4 class="p-2 pt-5">ANADP</h4>
+            <div class="text-secondary">TOP</div>
+            <div><a href="evolableasia.airtripstg://domestic_dp_ana/search">evolableasia.airtripstg://domestic_dp_ana/search</a></div>
+
+            <div class="text-secondary">空港指定</div>
+            <div><a href="evolableasia.airtripstg://domestic_dp_ana/search?departure=ITM&destination=CTS">evolableasia.airtripstg://domestic_dp_ana/search?departure=ITM&destination=CTS</a></div>
+        </div>
+
+        <div class="container p-3">
+            <h2 class="bg-primary text-white">PROD</h2>
+            <h4 class="p-2">国内DP</h4>
+            <div class="text-secondary">TOP</div>
+            <div><a href="evolableasia.airtrip://domestic_dp/search">evolableasia.airtrip://domestic_dp/search</a></div>
+
+            <div class="text-secondary">空港指定</div>
+            <div><a href="evolableasia.airtrip://domestic_dp/search?departure=HND&destination=FUK">evolableasia.airtrip://domestic_dp/search?departure=HND&destination=FUK</a></div>
+
+            <h4 class="p-2 pt-5">ANADP</h4>
+            <div class="text-secondary">TOP</div>
+            <div><a href="evolableasia.airtrip://domestic_dp_ana/search">evolableasia.airtrip://domestic_dp_ana/search</a></div>
+            <div class="text-secondary">空港指定</div>
+            <div><a href="evolableasia.airtrip://domestic_dp_ana/search?departure=ITM&destination=CTS">evolableasia.airtrip://domestic_dp_ana/search?departure=ITM&destination=CTS</a></div>
+
+            <div class="text-secondary">webview</div>
+            <div><a href="evolableasia.airtrip://webview?url_web=https%3A%2F%2Fyahoo.co.jp%3F">evolableasia.airtrip://webview?url_web=https%3A%2F%2Fyahoo.co.jp%3F</a></div>
+
+            <div class="text-secondary">webview2</div>
+            <div><a href="evolableasia.airtrip://webview?url_web=https%3A%2F%2Fhs-test-00000.s3.ap-northeast-1.amazonaws.com%2Findex.html">evolableasia.airtrip://webview?url_web=https%3A%2F%2Fhs-test-00000.s3.ap-northeast-1.amazonaws.com%2Findex.html</a></div>
+
+            <br/><br/>
+            <h2>Memo</h2>
+            <a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fsignup%3Fadj_t%3Dsrcf21p">adjust_test jsr</a>
+            <br/><br/>
+
+            <a href="https://s5xm.adj.st/signup?adj_t=srcf21p">adjust_test ulink</a>
+
+            <br/><br/>
+            <a href="https://s5xm.adj.st/domestic_dp/search?adj_t=srcf21p">adjust_test ulink domdp</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fsignup">adjust_test track&deep</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fdomestic_dp%252Fsearch%3Fadj_t%3Dsrcf21p">adjust_test jsr6</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fsignup%3Fadj_t%3Dsrcf21p">adjust_test jsr5</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fevolableasia.airtrip%3A%2F%2Fsignup%3Fadj_t%3Dsrcf21p%26adj_deep_link%3Devolableasia.airtrip%253A%252F%252Fevolableasia.airtrip%253A%252F%252Fsignup">adjust_test jsr5</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fdomestic_dp_ana%2Fsearch%3Fadj_t%3Dsrcf21p%26adj_deep_link%3Devolableasia.airtrip%253A%252F%252Fdomestic_dp_ana%252Fsearch">adjust_test jsr4</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fsignup%3Fadj_t%3Dsrcf21p%26adj_deep_link%3Devolableasia.airtrip%253A%252F%252Fsignup">adjust_test jsr3</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fdomestic_dp%2Fsearch">adjust_test jsr2</a>
+            <br/><br/>
+
+            <a href="https://s5xm.adj.st/domestic/flight/search?adj_t=srcf21p&adj_deep_link=evolableasia.airtrip://domestic/flight/search">adjust_test ulink test1</a>
+            <br/><br/>
+
+            <a href="https://s5xm.adj.st/domestic/flight/search?adj_t=srcf21p&adj_deep_link=evolableasia.airtrip%3A%2F%2Fdomestic%2Fflight%2Fsearch">adjust_test ulink</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/jsr?url=https%3A%2F%2Fs5xm.adj.st%2Fdomestic_dp%2Fsearch%3Fadj_t%3Dsrcf21p%26adj_deep_link%3Devolableasia.airtrip%253A%252F%252Fdomestic_dp%252Fsearch">adjust_test jsr</a>
+            <br/><br/>
+
+            <a href="https://app.adjust.com/srcf21p?deep_link=evolableasia.airtrip%3A%2F%2Fevolableasia.airtrip%3A%2F%2Fdomestic_dp%2Fsearch">adjust_test3</a>
+        </div>
+    </body>
+</html>

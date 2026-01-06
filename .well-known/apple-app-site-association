@@ -1,0 +1,10 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": ["WWYRZZWZ9V.com.evolableasia.AirTripSTG"],
+                "components": [ { "/": "/*" } ]
+            }
+        ]
+    }
+}

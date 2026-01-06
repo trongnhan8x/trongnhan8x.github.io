@@ -1,9 +1,74 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.recipe_app",
-    "sha256_cert_fingerprints":
-    ["B6:94:02:F5:90:8A:DA:79:F4:B7:E9:12:A0:CA:57:35:FB:88:45:A9:4B:09:84:83:BA:CB:AE:ED:EB:91:C9:1E"]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.evolableasia.airtrip.dev",
+      "sha256_cert_fingerprints": ["25:1C:7B:D5:0A:58:C2:07:F0:74:70:81:B7:3E:E9:0B:82:FE:80:E3:26:8C:49:F3:1C:E2:17:03:06:0F:D2:82"]
+    },
+    "dynamic_asset_links_component": {
+      "package_name": "com.evolableasia.airtrip.dev",
+      "should_handle_all_urls": true,
+      "rules": [
+        {
+          "path": "/app-air-lp/top",
+          "should_handle": false
+        }
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.evolableasia.airtrip.dev",
+      "sha256_cert_fingerprints": ["2C:8C:6D:B5:53:F8:BA:04:6A:CD:9F:54:99:E4:8A:C4:8F:10:3E:4F:03:D0:D9:E8:5C:5D:41:72:BB:00:7B:58"]
+    },
+    "dynamic_asset_links_component": {
+      "package_name": "com.evolableasia.airtrip.dev",
+      "should_handle_all_urls": true,
+      "rules": [
+        {
+          "path": "/app-air-lp/top",
+          "should_handle": false
+        }
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.evolableasia.airtrip",
+      "sha256_cert_fingerprints": ["25:1C:7B:D5:0A:58:C2:07:F0:74:70:81:B7:3E:E9:0B:82:FE:80:E3:26:8C:49:F3:1C:E2:17:03:06:0F:D2:82"]
+    },
+    "dynamic_asset_links_component": {
+      "package_name": "com.evolableasia.airtrip",
+      "should_handle_all_urls": true,
+      "rules": [
+        {
+          "path": "/app-air-lp/top",
+          "should_handle": false
+        }
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.evolableasia.airtrip",
+      "sha256_cert_fingerprints": ["2C:8C:6D:B5:53:F8:BA:04:6A:CD:9F:54:99:E4:8A:C4:8F:10:3E:4F:03:D0:D9:E8:5C:5D:41:72:BB:00:7B:58"]
+    },
+    "dynamic_asset_links_component": {
+      "package_name": "com.evolableasia.airtrip",
+      "should_handle_all_urls": true,
+      "rules": [
+        {
+          "path": "/app-air-lp/top",
+          "should_handle": false
+        }
+      ]
+    }
   }
-}]
+]

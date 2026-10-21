@@ -4,6 +4,12 @@ Refer: https://developer.apple.com/documentation/xcode/supporting-associated-dom
 Place "apple-app-site-association" file in your site’s ".well-known" directory. 
 The file’s URL should match the following format: 
 
-=> "https://www-airtrip-renewal-dev.airtrip.jp/.well-known/apple-app-site-association"
+(Dev-Env)
+"https://www-airtrip-renewal-dev.airtrip.jp/.well-known/apple-app-site-association"
+
+(Prod-Env)
+"https://www.airtrip.jp/.well-known/apple-app-site-association"
+"https://re.airtrip.jp/.well-known/apple-app-site-association"
+"https://hachidori.io/.well-known/apple-app-site-association"
 
 You must host the file using "https://" with a valid certificate and with no redirects.

@@ -2,8 +2,35 @@
     "applinks": {
         "details": [
             {
-                "appIDs": ["WWYRZZWZ9V.com.evolableasia.AirTripSTG"],
-                "components": [ { "/": "/*" } ]
+                "appIDs": ["WWYRZZWZ9V.com.evolableasia.AirTrip",
+                           "WWYRZZWZ9V.com.evolableasia.AirTripSTG"],
+                "components": [
+                  {
+                    "/": "/",
+                    "?": "source=airtrip.jp",
+                    "comment": ""
+                  },
+                  {
+                    "/": "/",
+                    "?": "source=re.airtrip.jp",
+                    "comment": ""
+                  },
+                  {
+                    "/": "/",
+                    "?": "source=trongnhan8x.github.io",
+                    "comment": ""
+                  },
+                  {
+                    "/": "/",
+                    "?": "source=hachidori.io",
+                    "comment": ""
+                  },
+                  { "/": "/app-air-lp/*" },
+                  {
+                    "/": "/booking/confirm/getlink*",
+                    "?": { "utm_source": "email" }
+                  }
+                ]
             }
         ]
     }
